@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Каркасные дома под ключ в Челябинске</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F5F2EC;--paper:#FFFDF9;--ink:#1E2420;--mut:#5E655F;--line:#E3DDD2;--wood:#C98B4E;--wood2:#8A5526;--pine:#2F5D46;--pine2:#244A38;--warm:#F2E3CC}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font-family:Onest,sans-serif;background:var(--bg);color:var(--ink);line-height:1.55}
+.w{max-width:1180px;margin:0 auto;padding:0 20px}
+a{color:inherit}
+nav{position:sticky;top:0;z-index:20;background:rgba(245,242,236,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav .w{display:flex;align-items:center;justify-content:space-between;height:64px;gap:16px}
+.brand{font-weight:800;font-size:18px;display:flex;gap:10px;align-items:center}
+.brand i{width:28px;height:28px;background:var(--pine);clip-path:polygon(50% 0,100% 45%,100% 100%,0 100%,0 45%);display:block}
+nav .links{display:flex;gap:22px;font-size:15px;color:var(--mut)}nav .links a{text-decoration:none}
+.btn{display:inline-flex;align-items:center;gap:8px;font:600 16px Onest;padding:14px 22px;border-radius:12px;border:0;cursor:pointer;text-decoration:none;transition:transform .2s,background .2s}
+.btn:active{transform:scale(.97)}
+.b1{background:var(--pine);color:#fff}.b1:hover{background:var(--pine2)}
+.b2{background:#fff;color:var(--ink);border:1px solid var(--line)}
+.sm{padding:10px 16px;font-size:15px}
+.hero{padding:56px 0 30px}
+.hero .w{display:grid;grid-template-columns:1.05fr 1fr;gap:40px;align-items:center}
+h1{font-size:clamp(34px,4.6vw,58px);line-height:1.04;font-weight:800;letter-spacing:-.02em}
+h1 em{font-style:normal;color:var(--pine)}
+.sub{font-size:19px;color:var(--mut);margin:18px 0 26px;max-width:520px}
+.facts{display:flex;gap:26px;margin-top:30px;flex-wrap:wrap}
+.facts b{display:block;font-size:28px;font-weight:800}.facts span{color:var(--mut);font-size:14px}
+.spring{margin-top:18px;font-size:15px;color:var(--wood2);font-weight:600}
+.houseCard{background:var(--paper);border:1px solid var(--line);border-radius:22px;padding:20px}
+.houseCard svg{width:100%;height:auto;display:block}
+.stages{display:flex;gap:6px;flex-wrap:wrap;margin-top:12px}
+.stages button{font:500 13px Onest;padding:7px 11px;border-radius:999px;border:1px solid var(--line);background:#fff;cursor:pointer;color:var(--mut)}
+.stages button.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.stInfo{display:flex;justify-content:space-between;margin-top:12px;font-size:15px;gap:12px}
+.stInfo b{font-weight:700}
+svg .L{transition:opacity .5s,transform .6s cubic-bezier(.2,.8,.2,1)}
+svg .L.off{opacity:0;transform:translateY(-14px)}
+section{padding:72px 0}
+h2{font-size:clamp(28px,3.4vw,40px);font-weight:800;letter-spacing:-.015em;line-height:1.1}
+.lead{color:var(--mut);font-size:18px;margin:12px 0 34px;max-width:700px}
+.wall{display:grid;grid-template-columns:1fr 1fr;gap:34px;align-items:center}
+.layers{display:flex;flex-direction:column;gap:8px}
+.layer{display:grid;grid-template-columns:20px 1fr auto;gap:14px;align-items:center;padding:14px 16px;border-radius:14px;background:#fff;border:1px solid var(--line);cursor:pointer;transition:border-color .2s,background .2s}
+.layer i{width:20px;height:20px;border-radius:5px;display:block}
+.layer small{display:block;color:var(--mut);font-size:14px}
+.layer.on{border-color:var(--pine);background:#F1F6F2}
+.layer b{font-weight:700}
+.cut{background:var(--paper);border:1px solid var(--line);border-radius:22px;padding:26px}
+.cut svg{width:100%;height:auto}
+.cut rect{transition:opacity .3s}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:18px;overflow:hidden;cursor:pointer;transition:transform .25s,box-shadow .25s}
+.card:hover{transform:translateY(-4px);box-shadow:0 20px 40px -24px rgba(0,0,0,.3)}
+.card .pic{aspect-ratio:16/10;background:var(--warm);display:flex;align-items:flex-end;justify-content:center;position:relative}
+.card .pic span{position:absolute;top:12px;left:12px;font-size:12px;background:#fff;padding:4px 9px;border-radius:999px;color:var(--mut)}
+.card .pic svg{width:72%;height:auto}
+.card .m{padding:16px 18px 18px}
+.card h3{font-size:19px}
+.card .row{display:flex;justify-content:space-between;color:var(--mut);font-size:14px;margin-top:6px}
+.card .p{font-size:20px;font-weight:800;margin-top:10px}
+.steps{display:grid;grid-template-columns:repeat(6,1fr);gap:10px;counter-reset:s}
+.step{background:#fff;border:1px solid var(--line);border-radius:16px;padding:16px}
+.step:before{counter-increment:s;content:"0" counter(s);font-weight:800;color:var(--wood2);font-size:14px}
+.step b{display:block;margin:6px 0 4px}
+.step .r{font-weight:700;color:var(--pine)}
+.step small{display:block;color:var(--mut);font-size:13px;margin-top:6px}
+.fix{margin-top:18px;background:var(--pine);color:#fff;border-radius:18px;padding:20px 24px;display:flex;justify-content:space-between;gap:20px;align-items:center;flex-wrap:wrap}
+.cases{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.case{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:14px}
+.case .ph{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}
+.case .ph div{aspect-ratio:1;border-radius:10px;background:repeating-linear-gradient(45deg,#EFE7DA 0 10px,#F6F0E6 10px 20px);display:flex;align-items:center;justify-content:center;font-size:12px;color:var(--mut);text-align:center}
+.case h3{font-size:17px;margin:12px 0 4px}.case p{color:var(--mut);font-size:14px}
+.trust{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.trust div{background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px}
+.trust b{font-size:36px;font-weight:800;display:block;color:var(--pine)}
+.trust span{color:var(--mut)}
+.formWrap{display:grid;grid-template-columns:1fr 1fr;gap:36px;background:var(--ink);color:#fff;border-radius:26px;padding:44px}
+.formWrap .lead{color:#C8CEC9}
+form{display:flex;flex-direction:column;gap:12px}
+input,select{font:16px Onest;padding:15px 16px;border-radius:12px;border:1px solid #3a423c;background:#262D28;color:#fff}
+.seg{display:flex;gap:8px;flex-wrap:wrap}
+.seg label{padding:10px 14px;border-radius:10px;border:1px solid #3a423c;cursor:pointer;font-size:15px}
+.seg input{display:none}.seg input:checked+span{color:#fff}.seg label:has(input:checked){background:var(--wood2);border-color:var(--wood2)}
+.promise{font-size:14px;color:#C8CEC9}
+.ok{display:none;background:#2F5D46;padding:16px;border-radius:12px}
+details{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin-bottom:10px}
+summary{font-weight:700;cursor:pointer;list-style:none;display:flex;justify-content:space-between}
+summary:after{content:"+";color:var(--pine);font-size:22px;line-height:1}
+details[open] summary:after{content:"–"}
+details p{color:var(--mut);margin-top:10px}
+footer{background:#161B18;color:#AEB5AF;padding:46px 0;font-size:15px}
+footer .w{display:grid;grid-template-columns:2fr 1fr 1fr;gap:30px}
+footer b{color:#fff}
+.note{font-size:13px;color:var(--mut);margin-top:14px}
+.modal{position:fixed;inset:0;background:rgba(20,24,21,.55);display:none;align-items:center;justify-content:center;z-index:50;padding:16px}
+.modal.on{display:flex}
+.mbox{background:var(--paper);border-radius:22px;max-width:760px;width:100%;padding:28px;max-height:90vh;overflow:auto;animation:pop .3s cubic-bezier(.2,.8,.2,1)}
+@keyframes pop{from{opacity:0;transform:translateY(12px) scale(.98)}}
+.mbox .g2{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:16px}
+.mbox ul{padding-left:18px;color:var(--mut)}
+.x{float:right;background:none;border:0;font-size:28px;cursor:pointer;line-height:1}
+.maxbtn{position:fixed;right:18px;bottom:18px;z-index:30;box-shadow:0 10px 24px -10px rgba(0,0,0,.4)}
+@media(max-width:900px){.hero .w,.wall,.formWrap,.mbox .g2{grid-template-columns:1fr}.cards,.cases{grid-template-columns:1fr}.steps{grid-template-columns:1fr 1fr}.trust{grid-template-columns:1fr 1fr}nav .links{display:none}footer .w{grid-template-columns:1fr}.formWrap{padding:26px}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+</head>
+<body>
+<nav><div class="w"><div class="brand"><i></i>Ваш логотип</div>
+<div class="links"><a href="#tech">Технология</a><a href="#cat">Проекты</a><a href="#steps">Этапы и смета</a><a href="#cases">Объекты</a><a href="#faq">Вопросы</a></div>
+<a class="btn b1 sm" href="#calc">Рассчитать стоимость</a></div></nav>
+
+<header class="hero"><div class="w">
+ <div>
+  <h1>Каркасные дома под ключ в Челябинске <em>от 2,9 млн ₽</em> за 90 дней</h1>
+  <p class="sub">Фиксированная смета в договоре - цена не вырастет в процессе. Гарантия на конструктив 10 лет.</p>
+  <div style="display:flex;gap:12px;flex-wrap:wrap"><a class="btn b1" href="#calc">Рассчитать стоимость</a><a class="btn b2" href="#calc">Написать в MAX</a></div>
+  <p class="spring">Начнём стройку зимой - весной заезжайте и живите.</p>
+  <div class="facts"><div><b>200 мм</b><span>утепление стен</span></div><div><b>180 кг/м²</b><span>снеговая нагрузка</span></div><div><b>10 лет</b><span>гарантия</span></div></div>
+ </div>
+ <div class="houseCard">
+  <svg viewBox="0 0 520 360" id="house" aria-label="Дом по этапам строительства">
+   <rect x="0" y="318" width="520" height="42" fill="#E7DFD2"/>
+   <g class="L" data-s="0"><rect x="70" y="300" width="380" height="22" fill="#9AA09B"/><g fill="#7D837E"><rect x="80" y="322" width="10" height="26"/><rect x="170" y="322" width="10" height="26"/><rect x="260" y="322" width="10" height="26"/><rect x="350" y="322" width="10" height="26"/><rect x="430" y="322" width="10" height="26"/></g></g>
+   <g class="L" data-s="1" stroke="#C98B4E" stroke-width="7" fill="none"><path d="M80 300V170M150 300V170M220 300V170M300 300V170M370 300V170M440 300V170M76 170h368M76 236h368"/><path d="M80 300L150 236M300 300L370 236" stroke-width="4"/></g>
+   <g class="L" data-s="2"><path d="M50 176L260 50l210 126" fill="none" stroke="#A86C34" stroke-width="8"/><path d="M58 172L260 58l202 114v8H58Z" fill="#3B4A42"/><path d="M58 172L260 58l202 114" fill="none" stroke="#2A352F" stroke-width="10"/></g>
+   <g class="L" data-s="3"><rect x="80" y="172" width="360" height="128" fill="#F2D27A"/><g stroke="#E3BC56" stroke-width="2"><path d="M80 194h360M80 216h360M80 238h360M80 260h360M80 282h360"/></g></g>
+   <g class="L" data-s="4"><rect x="80" y="172" width="360" height="128" fill="#E9DCC7"/><g stroke="#D6C5A8" stroke-width="2"><path d="M80 186h360M80 200h360M80 214h360M80 228h360M80 242h360M80 256h360M80 270h360M80 284h360"/></g><rect x="112" y="200" width="70" height="62" fill="#5D7A86" stroke="#2F3A35" stroke-width="5"/><rect x="226" y="200" width="70" height="62" fill="#5D7A86" stroke="#2F3A35" stroke-width="5"/><rect x="346" y="210" width="56" height="90" fill="#6E4A2C"/><path d="M147 200v62M112 231h70M261 200v62M226 231h70" stroke="#2F3A35" stroke-width="3"/><path d="M236 120h48v40h-48z" fill="#5D7A86" stroke="#2F3A35" stroke-width="4"/></g>
+   <g class="L" data-s="5"><path d="M392 300v-24" stroke="#888" stroke-width="3"/><circle cx="392" cy="260" r="0" fill="#F2B544"/><rect x="420" y="70" width="18" height="60" fill="#5E655F"/><path d="M429 66c-6-10 6-14 0-26" stroke="#BFC4C0" stroke-width="4" fill="none"><animate attributeName="opacity" values="0;1;0" dur="3s" repeatCount="indefinite"/></path><g fill="#F7D774" opacity=".85"><rect x="114" y="202" width="66" height="58"/><rect x="228" y="202" width="66" height="58"/><rect x="238" y="122" width="44" height="36"/></g></g>
+  </svg>
+  <div class="stages" id="stg"></div>
+  <div class="stInfo"><span id="stName">Готовый дом</span><b id="stPrice">2 900 000 - 3 400 000 ₽</b></div>
+ </div>
+</div></header>
+
+<section id="tech"><div class="w">
+ <h2>Почему каркасный дом - это тёпло и надолго</h2>
+ <p class="lead">Нажмите на слой стены - покажем, что внутри и зачем. Цифры из проекта, а не из рекламы.</p>
+ <div class="wall">
+  <div class="cut"><svg viewBox="0 0 400 300" id="cut">
+   <rect data-l="0" x="20" y="20" width="26" height="260" fill="#C9B79A"/>
+   <rect data-l="1" x="46" y="20" width="10" height="260" fill="#2F5D46"/>
+   <rect data-l="2" x="56" y="20" width="22" height="260" fill="#D6A469"/>
+   <rect data-l="3" x="78" y="20" width="200" height="260" fill="#F2D27A"/>
+   <rect data-l="4" x="278" y="20" width="8" height="260" fill="#7A8C9E"/>
+   <rect data-l="5" x="286" y="20" width="22" height="260" fill="#D6A469"/>
+   <rect data-l="6" x="308" y="20" width="70" height="260" fill="#EFE5D3"/>
+   <g stroke="#C98B4E" stroke-width="6"><path d="M178 20v260"/></g>
+   <text x="30" y="296" font-size="12" fill="#5E655F" font-family="Onest">улица</text><text x="330" y="296" font-size="12" fill="#5E655F" font-family="Onest">дом</text>
+  </svg></div>
+  <div class="layers" id="layers"></div>
+ </div>
+</div></section>
+
+<section id="cat" style="padding-top:20px"><div class="w">
+ <h2>Проекты с ценой «от»</h2>
+ <p class="lead">Нажмите на проект - откроется планировка, что входит «под ключ» и расчёт под ваш участок.</p>
+ <div class="cards" id="cards"></div>
+ <p class="note">Демо: силуэты домов вместо фото. На сайте - только ваши реальные объекты, можно будет добавлять фото самостоятельно.</p>
+</div></section>
+
+<section id="steps" style="padding-top:20px"><div class="w">
+ <h2>Как мы строим и сколько стоит каждый этап</h2>
+ <p class="lead">Вилка по этапам для дома 100 м² - чтобы не было вопроса «где скрытые платежи».</p>
+ <div class="steps">
+  <div class="step"><b>Фундамент</b><span class="r">280-420 тыс.</span><small>Сваи или УШП, 7-10 дней</small></div>
+  <div class="step"><b>Каркас</b><span class="r">520-640 тыс.</span><small>Камерная сушка, антисептик, 14 дней</small></div>
+  <div class="step"><b>Кровля</b><span class="r">310-450 тыс.</span><small>Металлочерепица или мягкая, 7 дней</small></div>
+  <div class="step"><b>Утепление</b><span class="r">240-300 тыс.</span><small>200 мм стены, 250 мм кровля</small></div>
+  <div class="step"><b>Отделка</b><span class="r">690-900 тыс.</span><small>Фасад, окна, двери, внутренняя</small></div>
+  <div class="step"><b>Инженерия</b><span class="r">480-620 тыс.</span><small>Электрика, вода, отопление</small></div>
+ </div>
+ <div class="fix"><div><b style="font-size:20px">Цена фиксируется в договоре</b><div style="opacity:.85">Смета по этапам - приложение к договору. Оплата поэтапно, после приёмки каждого этапа.</div></div><a class="btn b2" href="#calc">Получить смету за 1 день</a></div>
+</div></section>
+
+<section id="cases" style="padding-top:20px"><div class="w">
+ <h2>Построенные дома</h2>
+ <p class="lead">До, в процессе и после - с адресом, сроком и итоговой сметой.</p>
+ <div class="cases">
+  <div class="case"><div class="ph"><div>до</div><div>в процессе</div><div>после</div></div><h3>Дом 96 м², Кременкуль</h3><p>Построили за 84 дня · смета 3,1-3,3 млн ₽</p></div>
+  <div class="case"><div class="ph"><div>до</div><div>в процессе</div><div>после</div></div><h3>Дом 120 м², Западный</h3><p>Построили за 97 дней · смета 3,9-4,2 млн ₽</p></div>
+  <div class="case"><div class="ph"><div>до</div><div>в процессе</div><div>после</div></div><h3>Дом 72 м², Миасс</h3><p>Построили за 70 дней · смета 2,6-2,8 млн ₽</p></div>
+ </div>
+ <p class="note">Места под ваши фото из архива. Адреса и цифры в демо - примеры.</p>
+</div></section>
+
+<section style="padding-top:20px"><div class="w">
+ <div class="trust"><div><b>9 лет</b><span>строим в Челябинской области</span></div><div><b>140+</b><span>домов сдано</span></div><div><b>10 лет</b><span>гарантия на конструктив</span></div><div><b>0 ₽</b><span>доплат сверх сметы</span></div></div>
+</div></section>
+
+<section id="calc"><div class="w">
+ <div class="formWrap">
+  <div><h2>Расчёт стоимости за 1 день</h2><p class="lead">Инженер посчитает смету под ваш участок и позвонит один раз - без спама и навязчивых звонков.</p><p class="promise">Нажимая кнопку, вы соглашаетесь с политикой обработки персональных данных.</p></div>
+  <form id="f">
+   <input required placeholder="Ваше имя" autocomplete="name">
+   <input required placeholder="Телефон" type="tel" autocomplete="tel" inputmode="tel">
+   <select><option>Площадь дома: до 80 м²</option><option>80-120 м²</option><option>120-160 м²</option><option>Больше 160 м²</option><option id="optProj" hidden></option></select>
+   <div class="seg"><label><input type="radio" name="c" checked><span>Звонок</span></label><label><input type="radio" name="c"><span>MAX</span></label><label><input type="radio" name="c"><span>Telegram</span></label></div>
+   <button class="btn b1" style="background:var(--wood2)">Получить расчёт</button>
+   <div class="ok" id="ok">Спасибо! Инженер свяжется в течение рабочего дня.</div>
+  </form>
+ </div>
+</div></section>
+
+<section id="faq" style="padding-top:10px"><div class="w" style="max-width:860px">
+ <h2 style="margin-bottom:24px">Частые вопросы</h2>
+ <details><summary>Сколько простоит каркасный дом?</summary><p>При правильной пароизоляции и вентилируемом фасаде - 75-100 лет. Древесина камерной сушки и антисептик защищают каркас от гнили.</p></details>
+ <details><summary>Чем отапливать и сколько это стоит?</summary><p>Газовый котёл или электрический + тёплый пол. Дом 100 м² с утеплением 200 мм обходится зимой в Челябинске примерно в 3-5 тыс. ₽ в месяц на газе.</p></details>
+ <details><summary>Можно ли строить зимой?</summary><p>Да. Каркас собирается без мокрых процессов, а фундамент на сваях монтируется в мороз. Зимой ещё и проще с подъездом техники.</p></details>
+ <details><summary>Ипотека и маткапитал?</summary><p>Работаем с аккредитованными банками: ИЖС-ипотека, семейная ипотека, маткапитал. Документы для банка готовим сами.</p></details>
+ <details><summary>Есть рассрочка?</summary><p>Поэтапная оплата: платите только за принятый этап. Рассрочку на отделку обсуждаем индивидуально.</p></details>
+</div></section>
+
+<footer><div class="w">
+ <div><b>Ваша компания</b><br>Каркасные дома под ключ в Челябинске и области<br>ООО «Название» · ИНН 0000000000<br><a href="#">Политика обработки персональных данных</a></div>
+ <div><b>Офис и база</b><br>г. Челябинск, адрес<br>Пн-Сб 9:00-19:00<br>[Яндекс Карта]</div>
+ <div><b>Связь</b><br>+7 (000) 000-00-00<br>MAX · Telegram · ВКонтакте</div>
+</div></footer>
+
+<a class="btn b1 maxbtn" href="#calc">Написать в MAX</a>
+
+<div class="modal" id="modal"><div class="mbox"><button class="x" onclick="closeM()" aria-label="Закрыть">×</button><div id="mbody"></div></div></div>
+
+<script>
+// этапы дома
+const ST=[["Фундамент","280 - 420 тыс. ₽"],["Каркас","520 - 640 тыс. ₽"],["Кровля","310 - 450 тыс. ₽"],["Утепление","240 - 300 тыс. ₽"],["Отделка","690 - 900 тыс. ₽"],["Готовый дом","2 900 000 - 3 400 000 ₽"]];
+const stg=document.getElementById('stg'),L=[...document.querySelectorAll('#house .L')];
+function show(n){L.forEach(g=>g.classList.toggle('off',+g.dataset.s>n));[...stg.children].forEach((b,i)=>b.classList.toggle('on',i===n));stName.textContent=ST[n][0];stPrice.textContent=ST[n][1]}
+ST.forEach((s,i)=>{const b=document.createElement('button');b.textContent=s[0];b.onclick=()=>{auto=false;show(i)};stg.appendChild(b)});
+let auto=true,cur=0;show(0);const io=new IntersectionObserver(e=>{if(e[0].isIntersecting){const t=setInterval(()=>{if(!auto||cur>=5)return clearInterval(t);show(++cur)},700)}},{threshold:.5});io.observe(document.getElementById('house'));
+// стена
+const LY=[["Фасадная отделка","имитация бруса или планкен","#C9B79A"],["Ветрозащита","мембрана - не выдувает тепло","#2F5D46"],["Вентзазор 22 мм","конденсат уходит наружу, каркас сухой","#D6A469"],["Утеплитель 200 мм","минвата, по теплу как кирпич 1,2 м","#F2D27A"],["Пароизоляция","влага из комнат не попадает в утеплитель","#7A8C9E"],["Обрешётка","зазор под проводку","#D6A469"],["Внутренняя отделка","вагонка, ГКЛ или блок-хаус","#EFE5D3"]];
+const lw=document.getElementById('layers'),R=[...document.querySelectorAll('#cut rect')];
+LY.forEach((l,i)=>{const d=document.createElement('div');d.className='layer';d.innerHTML=`<i style="background:${l[2]}"></i><div><b>${l[0]}</b><small>${l[1]}</small></div>`;d.onmouseenter=d.onclick=()=>{[...lw.children].forEach((x,j)=>x.classList.toggle('on',j===i));R.forEach(r=>r.style.opacity=+r.dataset.l===i?1:.25)};lw.appendChild(d)});
+lw.onmouseleave=()=>{R.forEach(r=>r.style.opacity=1);[...lw.children].forEach(x=>x.classList.remove('on'))};
+// каталог
+const P=[["Ольха",72,"2,6",70,1],["Сосна",96,"3,1",84,1],["Кедр",120,"3,9",97,2],["Лиственница",140,"4,5",110,2],["Ель Мини",54,"2,1",60,1],["Дуб Барн",110,"3,7",95,2]];
+const house=(f)=>f===2?'<svg viewBox="0 0 200 120"><path d="M20 60L100 10l80 50v60H20Z" fill="#E9DCC7"/><path d="M14 64L100 8l86 56" fill="none" stroke="#3B4A42" stroke-width="9"/><rect x="40" y="70" width="30" height="26" fill="#5D7A86"/><rect x="130" y="70" width="30" height="26" fill="#5D7A86"/><rect x="88" y="34" width="24" height="20" fill="#5D7A86"/><rect x="88" y="80" width="24" height="40" fill="#6E4A2C"/></svg>':'<svg viewBox="0 0 200 120"><path d="M30 60L100 22l70 38v60H30Z" fill="#E9DCC7"/><path d="M22 64L100 20l78 44" fill="none" stroke="#3B4A42" stroke-width="9"/><rect x="48" y="72" width="34" height="26" fill="#5D7A86"/><rect x="120" y="76" width="22" height="44" fill="#6E4A2C"/></svg>';
+const cards=document.getElementById('cards');
+P.forEach((p,i)=>{const c=document.createElement('div');c.className='card';c.innerHTML=`<div class="pic"><span>${p[4]===2?'2 этажа':'1 этаж'}</span>${house(p[4])}</div><div class="m"><h3>«${p[0]}»</h3><div class="row"><span>${p[1]} м²</span><span>${p[3]} дней</span></div><div class="p">от ${p[2]} млн ₽</div></div>`;c.onclick=()=>openP(i);cards.appendChild(c)});
+function openP(i){const p=P[i];mbody.innerHTML=`<h2>«${p[0]}» · ${p[1]} м²</h2><div class="g2"><div><svg viewBox="0 0 300 220" style="width:100%;background:#fff;border-radius:14px;border:1px solid var(--line)"><g fill="none" stroke="#1E2420" stroke-width="4"><rect x="20" y="20" width="260" height="180"/><path d="M150 20v110M20 130h170M190 130v70M100 130v70"/></g><g font-family="Onest" font-size="12" fill="#5E655F"><text x="40" y="70">Гостиная-кухня</text><text x="175" y="70">Спальня</text><text x="30" y="170">Санузел</text><text x="115" y="170">Спальня</text><text x="205" y="170">Тамбур</text></g></svg><p class="note">Планировка-пример</p></div><div><b>Под ключ входит:</b><ul><li>фундамент на сваях</li><li>каркас, утепление 200 мм</li><li>кровля, окна, входная дверь</li><li>фасад и внутренняя отделка</li><li>электрика, вода, отопление</li></ul><p style="margin:14px 0 6px;font-size:22px;font-weight:800">от ${p[2]} млн ₽ · ${p[3]} дней</p><a class="btn b1" href="#calc" onclick="pick('${p[0]}')">Рассчитать этот проект</a></div></div>`;modal.classList.add('on')}
+function closeM(){modal.classList.remove('on')}modal.onclick=e=>{if(e.target===modal)closeM()};addEventListener('keydown',e=>{if(e.key==='Escape')closeM()});
+function pick(n){closeM();const o=document.getElementById('optProj');o.hidden=false;o.textContent='Проект «'+n+'»';o.selected=true}
+f.onsubmit=e=>{e.preventDefault();ok.style.display='block'};
+</script>
+</body>
+</html>
